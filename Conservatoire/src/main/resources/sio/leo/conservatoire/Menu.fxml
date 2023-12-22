@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.leo.conservatoire.MenuController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#switchToCnx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@th.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="179.0" prefHeight="21.0" prefWidth="118.0" text="Horraires : 10h - 18h" />
+      <Label fx:id="saisie" layoutX="55.0" layoutY="255.0" onMouseClicked="#switchToSaisie" prefHeight="21.0" prefWidth="118.0" text="Saisie partition" />
+      <Label fx:id="recherche" layoutX="55.0" layoutY="327.0" onMouseClicked="#switchToRecherche" prefHeight="21.0" prefWidth="118.0" text="Recherche partition" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.leo.conservatoire.SaisieController">
+    <fx:include source="Menu.fxml" />
+   <ListView fx:id="liste" layoutX="230.0" layoutY="26.0" prefHeight="200.0" prefWidth="370.0" />
+   <Label layoutX="354.0" layoutY="6.0" text="Liste des partitions " />
+   <Label layoutX="230.0" layoutY="233.0" onMouseClicked="#showPartitionAdd" text="Rentrez une nouvelle partition" />
+   <Label layoutX="406.0" layoutY="233.0" onMouseClicked="#selectList" text="Ajouter la partition à mon classeur" />
+   <Label fx:id="nom" layoutX="230.0" layoutY="270.0" text="Nom :" />
+   <Label fx:id="artiste" layoutX="230.0" layoutY="306.0" text="Artiste :" />
+   <Button fx:id="ajouter" layoutX="373.0" layoutY="340.0" mnemonicParsing="false" onAction="#addPartition" text="Ajouter" />
+   <Label fx:id="state" layoutX="385.0" layoutY="375.0" />
+   <TextField fx:id="txtNom" layoutX="311.0" layoutY="266.0" prefHeight="25.0" prefWidth="208.0" />
+   <TextField fx:id="txtArt" layoutX="311.0" layoutY="302.0" prefHeight="25.0" prefWidth="208.0" />
+</AnchorPane>
